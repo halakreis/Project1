@@ -4,9 +4,10 @@
 }
 .grid1{
     display: grid;
-    grid-template-areas: "h1 h1 h1 h1 h1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1"
+    grid-template-areas: "h1 h1 h1 h1 h1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" 
                          "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1"
-                         "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1";
+                         "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" 
+                         "f1 f1 f1 f1 f1" "f1 f1 f1 f1 f1"; 
 }
 header{
    display:flex;
@@ -16,7 +17,13 @@ header{
 }
 .h1{
     grid-area: h1;
-   
+    background-color: rgba(217, 217, 217, 0.4);
+    height: 70px;
+    padding-top: 10px;
+}
+.f1{
+  grid-area: f1;
+  padding-top: 10px;
 }
 .div1-pg1{
   position: absolute;
@@ -52,9 +59,10 @@ header{
 button{
     background-color: #9A3ECF;
     color: white;
-    width: 100px;
+    width: 150px;
     border: 1px solid transparent;
     border-radius: 5px;
+    font-size: large
 }
 .div4-pg1{
     width: 50%;
@@ -66,19 +74,19 @@ button{
     height: 270px;
     padding: 10px;
     background-color: white;
+    text-align: center;
 }
 .div5-pg1{
-    width: 150px;
+  width: 150px;
    display: flex;
    box-shadow: 0 0 1px 0 rgb(136, 134, 134);
    justify-content: space-evenly;
    height: 25px;
    align-items: center;
-   margin-left: 20px;
-   margin-top: -20px;
    position: absolute;
    z-index: 100;
    background-color: white;
+   margin-top: 220px;
 }
 .div5-pg1 div{
     background-color: #9A3ECF;
@@ -92,8 +100,7 @@ button{
     margin-top: -70px;
     padding: 100px;
     padding-left: 20px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 .grid2-pg1{
     display: grid;
@@ -101,20 +108,28 @@ button{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 220px;
-    align-self: flex-end;
     margin-top: 100px;
+    margin-left: 300px;
+  
 }
 .grid2-pg1 > div{
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
+    text-align: center;
 }
 .grid2-pg1 > div div{
    background-color: #9A3ECF;
     opacity: 0.41;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    
 }
+
 .Analyze{
   margin-top: 10px;
 }
@@ -176,13 +191,9 @@ button{
     grid-area: m3;
 }
 .f3{
+  padding: 10px;
     grid-area: f3;
     background-color: #2B135B;
-    display:flex;
-    justify-content:space-around;
-    position: relative;
-    align-items: center;
-    height: 70px;
 }
 input,textarea{
     border: none;
@@ -190,7 +201,6 @@ input,textarea{
 }
 .div1-pg3{
     background-color: rgba(217, 217, 217, 0.24);
-    
     padding: 10px;
 }
 
@@ -214,6 +224,9 @@ input,textarea{
    width: 60%;
    justify-content: space-between;
 
+}
+.div4-pg3 p{
+  margin-top: -70px;
 }
 .div5-pg3{
    background-color: rgba(154,62,207,0.41);
@@ -260,12 +273,27 @@ textarea:focus, input:focus{
 input[type="radio"]:checked{
     accent-color: rgba(154,62,207,0.41);
 }
+footer{
+width: 100%;
+background-color: #2B135B;
+color: white;
+text-align: center;
+}
+.divf1{
+  display: block;
+  width: 100%;
+}
+.mydiv-pg3{
+  display: inline-flex;
+  flex-flow: column wrap;
+}
 @media (max-width:999px){
     .grid1{
         display: grid;
         grid-template-areas: "h1 h1 h1 h1 h1" "h1 h1 h1 h1 h1" "h1 h1 h1 h1 h1" "h1 h1 h1 h1 h1" "h1 h1 h1 h1 h1"
                               "h1 h1 h1 h1 h1" "h1 h1 h1 h1 h1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1"
-                              "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1";
+                              "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1" "m1 m1 m1 m1 m1"
+                              "f1 f1 f1 f1 f1";
     }
     header{
         display: block;
@@ -317,13 +345,11 @@ input[type="radio"]:checked{
   }
   .div6-pg1{
     display: block;
-    text-align: center;
-    
+
+
   }
-  .grid2-pg1{
-    margin: auto;
-  }
-  .grid2 header, .grid3 header, .grid3 footer{
+
+  .grid1 header,.grid2 header, .grid3 header, .grid3 footer{
    height: 400px;
 }
    .grid{
@@ -348,8 +374,31 @@ input[type="radio"]:checked{
         margin-bottom: 400px;
         margin-left: 25%;
     }
+    .div4-pg1{
+      height: 300px;
+      margin-top: -170px;
+     }
+      .div3-pg1{
+    margin-top: 100px;
+  }
+  .div4-pg3 p{
+  margin-top: 0px;
+}
+ .f3{
+  height: 100px;
+ }
 }
 @media (max-width:800px){
+     .grid1 header,.grid2 header, .grid3 header, .grid3 footer{
+   height: 250px;
+}
+  .div3-pg1{
+    margin-top: -200px;
+  }
+     .div4-pg1{
+      height: 200px;
+      margin-top: -150px;
+     }
      .div5-pg1{
     display: flex;
     flex-direction: column;
@@ -411,4 +460,10 @@ input[type="radio"]:checked{
   .m1 h1{
     font-size: 20px;
   }
+    .div4-pg3 p{
+  margin-top: 0px;
+}
+  .f3{
+  height: 100px;
+ }
 }
